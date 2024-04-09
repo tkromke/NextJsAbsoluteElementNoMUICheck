@@ -200,8 +200,8 @@
   height: 1752px;
   position: relative;
   background-color: var(--white);
-  letter-spacing: normal;
   line-height: normal;
+  letter-spacing: normal;
 }
 @media screen and (max-width: 1125px) {
   .frameGroup {

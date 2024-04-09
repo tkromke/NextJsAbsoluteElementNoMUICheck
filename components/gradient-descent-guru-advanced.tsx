@@ -18,8 +18,8 @@ const GradientDescentGuruAdvanced: NextPage = () => {
                 </i>
               </div>
               <div className={styles.dividerElement}>
-                <div className={styles.frameGroup}>
-                  <div className={styles.iconSystemWrapper}>
+                <div className={styles.outputDistributor}>
+                  <div className={styles.decisionTree}>
                     <img
                       className={styles.iconSystem}
                       loading="lazy"
@@ -31,9 +31,9 @@ const GradientDescentGuruAdvanced: NextPage = () => {
                     hello@dhuhacreative.com
                   </i>
                 </div>
-                <div className={styles.sliderControlWrapper}>
+                <div className={styles.variableHolder}>
                   <div className={styles.sliderControl}>
-                    <div className={styles.iconslackWrapper}>
+                    <div className={styles.functionCaller}>
                       <img
                         className={styles.iconslack}
                         loading="lazy"

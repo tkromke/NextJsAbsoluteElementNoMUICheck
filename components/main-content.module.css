@@ -78,7 +78,6 @@
   display: inline-block;
   font-weight: 700;
   min-width: 42px;
-  z-index: 1;
 }
 .loginWrapper {
   display: flex;
@@ -87,35 +86,36 @@
   justify-content: flex-start;
   padding: var(--padding-mini) 0 0;
 }
+.button,
+.mainContent,
+.signUp {
+  display: flex;
+  justify-content: center;
+}
 .signUp {
   width: 58px;
   position: relative;
   font-size: var(--font-size-base);
   line-height: 20px;
-  display: flex;
   font-weight: 700;
   font-family: var(--font-chivo);
   color: var(--white);
   text-align: center;
   align-items: flex-end;
-  justify-content: center;
   min-width: 58px;
 }
 .button,
 .mainContent {
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
 }
 .button {
   cursor: pointer;
   border: 0;
   padding: var(--padding-mini) var(--padding-13xl);
-  background-color: var(--purple-purple);
+  background-color: var(--studio-universal-confirm-4fc786);
   border-radius: var(--br-7xs);
-  justify-content: flex-start;
+  align-items: center;
   white-space: nowrap;
-  z-index: 1;
 }
 .button:hover {
   background-color: var(--color-mediumslateblue-100);
@@ -126,7 +126,7 @@
   left: 0;
   background-color: var(--white);
   width: 100%;
-  justify-content: center;
+  align-items: flex-start;
   padding: var(--padding-5xl) var(--padding-xl) var(--padding-5xl)
     var(--padding-20xl);
   box-sizing: border-box;
@@ -135,7 +135,7 @@
   max-width: 100%;
   text-align: left;
   font-size: var(--font-size-base);
-  color: var(--greyscale-dark-grey);
+  color: var(--studio-universal-error-f4596c);
   font-family: var(--font-chivo);
 }
 @media screen and (max-width: 800px) {

@@ -40,7 +40,7 @@
   flex-shrink: 0;
   z-index: 1;
 }
-.iconSystemWrapper {
+.decisionTree {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,7 +54,7 @@
   white-space: nowrap;
   z-index: 1;
 }
-.frameGroup {
+.outputDistributor {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -69,7 +69,7 @@
   flex-shrink: 0;
   z-index: 1;
 }
-.iconslackWrapper {
+.functionCaller {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -88,12 +88,12 @@
 }
 .dividerElement,
 .sliderControl,
-.sliderControlWrapper {
+.variableHolder {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.sliderControlWrapper {
+.variableHolder {
   flex-direction: row;
   padding: 0 var(--padding-7xs) 0 var(--padding-10xs-1);
 }
