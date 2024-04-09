@@ -37,6 +37,8 @@ body {
   --color-gray-200: rgba(255, 255, 255, 0.8);
   --color-gray-300: rgba(255, 255, 255, 0);
   --greyscale-grey: #5d6180;
+  --studio-universal-confirm-4fc786: #4fc786;
+  --studio-universal-error-f4596c: #f4596c;
 
   /* Gaps */
   --gap-xl: 20px;

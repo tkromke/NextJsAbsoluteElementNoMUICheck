@@ -196,8 +196,8 @@
   justify-content: flex-start;
   gap: var(--gap-mini);
 }
-.frameInner,
-.labelLinkerChild {
+.labelLinkerChild,
+.sequenceControllerChild {
   position: absolute;
   top: 33px;
   left: 0;
@@ -207,7 +207,7 @@
   height: 1px;
   opacity: 0.2;
 }
-.frameInner {
+.sequenceControllerChild {
   margin: 0 !important;
   top: 6px;
   left: -93px;
@@ -241,13 +241,13 @@
   justify-content: flex-start;
   gap: var(--gap-12xs);
 }
-.groupIcon {
+.dataMappingChild {
   width: 14px;
   height: 14px;
   position: relative;
 }
-.fillProperty,
-.fillPropertyInner {
+.dataMapping,
+.fillProperty {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -262,7 +262,7 @@
   gap: var(--gap-mini-8);
   z-index: 1;
 }
-.frameChild1 {
+.frameInner {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -303,15 +303,15 @@
   left: 113px;
   z-index: 1;
 }
-.frameGroup,
-.lineParent {
+.frameParent,
+.sequenceController {
   position: absolute;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frameGroup {
+.frameParent {
   height: 101px;
   width: 235px;
   margin: 0 !important;
@@ -321,29 +321,29 @@
   box-sizing: border-box;
   z-index: 2;
 }
-.lineParent {
+.sequenceController {
   top: 0;
   left: 93px;
 }
+.frameChild1,
 .frameChild2,
-.frameChild3,
 .labelLinker,
 .lineDiv {
   align-self: stretch;
   height: 34px;
   position: relative;
 }
+.frameChild1,
 .frameChild2,
-.frameChild3,
 .lineDiv {
   height: 1px;
   border-top: 1px solid var(--greyscale-grey-pale);
   box-sizing: border-box;
   opacity: 0.2;
 }
-.dataAnalyticsParent,
-.frameParent,
-.labelLinkerParent {
+.labelLinkerParent,
+.logicBranch,
+.outputCollector {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -355,17 +355,17 @@
   font-size: var(--text-size);
   color: var(--white);
 }
-.dataAnalyticsParent,
-.frameParent {
+.logicBranch,
+.outputCollector {
   align-self: stretch;
 }
-.frameParent {
+.outputCollector {
   flex-direction: row;
   gap: var(--gap-xs);
   font-size: var(--font-size-3xs);
   color: var(--greyscale-grey);
 }
-.dataAnalyticsParent {
+.logicBranch {
   flex-direction: column;
   gap: var(--gap-sm);
 }
@@ -398,26 +398,26 @@
 .jul {
   min-width: 15px;
 }
-.illustrationsInner1,
-.marParent {
+.bufferManager,
+.dataStack {
   flex-direction: row;
   align-items: flex-start;
 }
-.marParent {
+.bufferManager {
   flex: 1;
   display: flex;
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.illustrationsInner1 {
+.dataStack {
   width: 235px;
   padding: 0 var(--padding-7xs) 0 0;
   box-sizing: border-box;
   font-size: var(--font-size-3xs);
   color: var(--greyscale-grey);
 }
+.dataStack,
 .illustrations1,
-.illustrationsInner1,
 .illustrationsWrapper {
   display: flex;
   justify-content: flex-start;
@@ -456,47 +456,46 @@
   box-shadow: var(--card-shadow-1);
   display: none;
 }
-.frameChild4,
 .salesStats {
   position: relative;
-  z-index: 1;
-}
-.salesStats {
   line-height: 18px;
   display: inline-block;
   font-weight: 700;
   min-width: 77px;
+  z-index: 1;
 }
-.frameChild4 {
+.redBlackTreeChild {
   height: 67px;
   width: 67px;
+  position: relative;
+  z-index: 1;
 }
-.frameWrapper {
+.redBlackTree {
   align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
 }
-.illustrationsInner2,
-.salesStatsParent {
+.binarySearchTree,
+.dataTree {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.salesStatsParent {
+.binarySearchTree {
   flex: 1;
   flex-direction: column;
   gap: var(--gap-3xs);
 }
-.illustrationsInner2 {
+.dataTree {
   width: 115px;
   flex-direction: row;
   padding: 0 var(--padding-11xs);
   box-sizing: border-box;
 }
-.frameChild5,
-.frameChild6 {
+.frameChild3,
+.frameChild4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -506,7 +505,7 @@
   height: 6px;
   z-index: 1;
 }
-.frameChild6 {
+.frameChild4 {
   top: 14px;
 }
 .rectangleParent {
@@ -514,8 +513,8 @@
   width: 20px;
   position: relative;
 }
-.frameChild7,
-.frameChild8 {
+.frameChild5,
+.frameChild6 {
   align-self: stretch;
   height: 6px;
   position: relative;
@@ -523,7 +522,7 @@
   background-color: var(--greyscale-grey-pale);
   z-index: 1;
 }
-.frameContainer,
+.linkedList,
 .rectangleGroup {
   display: flex;
   align-items: flex-start;
@@ -534,7 +533,7 @@
   flex-direction: column;
   gap: var(--gap-5xs);
 }
-.frameContainer {
+.linkedList {
   align-self: stretch;
   flex-direction: row;
   gap: var(--gap-3xs);
@@ -588,15 +587,15 @@
   line-height: 24px;
   min-width: 61px;
 }
-.totalSubscribeParent {
+.quickSort {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-12xs);
 }
-.illustrations3,
-.illustrationsContainer {
+.binaryHeap,
+.illustrations3 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -611,7 +610,7 @@
   gap: var(--gap-xs);
   z-index: 2;
 }
-.illustrationsContainer {
+.binaryHeap {
   width: 269px;
   justify-content: flex-end;
   padding: 0 var(--padding-14xl);
@@ -677,7 +676,7 @@
   line-height: 120%;
   min-width: 27px;
 }
-.dailyWrapper {
+.dataProcessor {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -686,7 +685,7 @@
   font-size: var(--font-size-2xs);
   color: var(--greyscale-grey);
 }
-.revenueGrowthParent {
+.bucketSortWithCounting {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -694,7 +693,7 @@
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.frameChild9 {
+.outputAggregatorChild {
   height: 80px;
   flex: 1;
   position: relative;
@@ -702,8 +701,7 @@
   overflow: hidden;
   z-index: 1;
 }
-.illustrations5,
-.illustrationsInner3 {
+.outputAggregator {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -711,11 +709,16 @@
   justify-content: flex-end;
   padding: 0 var(--padding-9xs) 0 var(--padding-5xs);
 }
+.heapSort,
 .illustrations5 {
+  display: flex;
+  flex-direction: column;
+}
+.illustrations5 {
+  align-self: stretch;
   border-radius: var(--br-7xs);
   background-color: var(--white);
   box-shadow: var(--card-shadow-1);
-  flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
   padding: var(--padding-base) var(--padding-xl) var(--padding-base)
@@ -723,34 +726,32 @@
   gap: var(--gap-3xl);
   z-index: 2;
 }
-.illustrationsFrame {
+.heapSort {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-11xs);
   box-sizing: border-box;
   min-width: 153px;
 }
-.frameParent1,
-.illustrationsParent,
-.patternParent {
+.patternParent,
+.priorityQueue,
+.selectionSort {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
 }
-.illustrationsParent {
+.selectionSort {
   align-self: stretch;
   flex-direction: row;
   gap: var(--gap-13xl);
 }
-.frameParent1,
-.patternParent {
+.patternParent,
+.priorityQueue {
   flex-direction: column;
   max-width: 100%;
 }
-.frameParent1 {
+.priorityQueue {
   width: 395px;
   gap: var(--gap-13xl);
 }
@@ -779,7 +780,7 @@
   .illustrations4 {
     flex: 1;
   }
-  .illustrationsParent {
+  .selectionSort {
     flex-wrap: wrap;
   }
 }
